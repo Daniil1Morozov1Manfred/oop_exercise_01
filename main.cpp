@@ -36,7 +36,13 @@ int main() {
         switch (a) {
             case 1: {
                 try {
-                    std::cout << f1.a + f2.a << " " << f1.b + f2.b << "\n";
+                    Bottle c;
+                    c.a = f1.a + f2.a;
+                    if (c.a == 0) {
+                        throw "ERROR";
+                    }
+                    c.b = (f1.a*f1.b + f2.a*f2.b) / c.a;
+                    std::cout << c.a << " " << c.b << "\n";
                 }
                 catch (const char* exc) {
                     std::cerr << exc << std::endl;
@@ -45,7 +51,18 @@ int main() {
             }
             case 2: {
                 try {
-                    std::cout << f1.a - f2.a << " " << f1.b - f2.b << "\n";
+                    Bottle c;
+                    if ((f1.a*f1.b >= f2.a*f2.b) && (f1.a > f2.a)) {
+                        c.a = f1.a - f2.a;
+                        if (c.a <= 0) {
+                            throw "ERROR";
+                        }
+                        c.b = (f1.a*f1.b - f2.a*f2.b)/c.a;
+                    }
+                    else {
+                        throw "ERROR. The second bottle is bigger";
+                    }
+                    std::cout << c.a << " " << c.b << "\n";
                 }
                 catch (const char* exc) {
                     std::cerr << exc << std::endl;
