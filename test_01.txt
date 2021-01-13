@@ -1,0 +1,34 @@
+Enter the total capacity of the first bottle
+10
+Enter the percentage of filling of the first bottle
+0.2
+Enter the total capacity of the second bottle
+8
+Enter the percentage of filling of the second bottle
+0.1
+To fold the bottles press 1
+To subtract bottles press 2
+To compare bottles press 3
+Exit in programm press 4
+Enter the command
+1
+18 0.3
+To fold the bottles press 1
+To subtract bottles press 2
+To compare bottles press 3
+Exit in programm press 4
+Enter the command
+2
+2 0.1
+To fold the bottles press 1
+To subtract bottles press 2
+To compare bottles press 3
+Exit in programm press 4
+Enter the command
+Bottles are NOT equal
+To fold the bottles press 1
+To subtract bottles press 2
+To compare bottles press 3
+Exit in programm press 4
+Enter the command
+4
